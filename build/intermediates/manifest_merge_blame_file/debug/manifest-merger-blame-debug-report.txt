@@ -1,0 +1,1056 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.misfer.srisabaries"
+4    android:versionCode="3"
+5    android:versionName="4.0.14" >
+6
+7    <uses-sdk
+7-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:24:5-25:107
+8        android:minSdkVersion="21"
+8-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:24:5-25:107
+9        android:targetSdkVersion="29" />
+9-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:24:5-25:107
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:6:5-65
+11-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:6:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:7:5-67
+12-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:7:22-64
+13    <!--
+14    <uses-permission android:name="android.permission.READ_SMS" />
+15    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+16    -->
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:10:5-76
+17-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:10:22-73
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:11:5-79
+18-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:12:5-80
+19-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:12:22-77
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:13:5-81
+20-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:13:22-78
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:14:5-75
+21-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:14:22-72
+22    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+22-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:15:5-78
+22-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:15:22-75
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+23-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:16:5-79
+23-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:16:22-76
+24    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+24-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:17:5-81
+24-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:17:22-78
+25    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+26    <uses-feature android:name="android.hardware.location.gps" />
+26-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:19:5-66
+26-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:19:19-63
+27
+28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+28-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:20:5-81
+28-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:20:22-78
+29    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+29-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:21:5-22:47
+29-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:21:22-70
+30
+31    <!-- Require below permissions for reading sms and otp assist feature -->
+32    <!--
+33    <uses-permission android:name="android.permission.READ_SMS" />
+34    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+35    -->
+36    <uses-feature
+36-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:24:5-26:36
+37        android:name="android.hardware.telephony"
+37-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:25:9-50
+38        android:required="false" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+38-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:26:9-33
+39    <permission
+39-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:8:5-10:47
+40        android:name="com.misfer.srisabaries.permission.C2D_MESSAGE"
+40-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:9:9-63
+41        android:protectionLevel="signature" />
+41-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:10:9-44
+42
+43    <uses-permission android:name="com.misfer.srisabaries.permission.C2D_MESSAGE" />
+43-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:12:5-79
+43-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:12:22-76
+44    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+44-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:18:5-82
+44-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:18:22-79
+45    <uses-permission android:name="android.permission.WAKE_LOCK" />
+45-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:19:5-68
+45-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:19:22-65
+46    <!--
+47 Required so the device vibrates on receiving a push notification.
+48         Vibration settings of the device still apply.
+49    -->
+50    <uses-permission android:name="android.permission.VIBRATE" /> <!-- START: ShortcutBadger -->
+50-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:24:5-66
+50-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:24:22-63
+51    <!-- Samsung -->
+52    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+52-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:32:5-86
+52-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:32:22-83
+53    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+53-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:33:5-87
+53-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:33:22-84
+54    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+54-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:34:5-81
+54-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:34:22-78
+55    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+55-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:35:5-83
+55-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:35:22-80
+56    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+56-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:36:5-88
+56-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:36:22-85
+57    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+57-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:37:5-92
+57-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:37:22-89
+58    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+58-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:38:5-84
+58-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:38:22-81
+59    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+59-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:39:5-83
+59-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:39:22-80
+60    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+60-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:40:5-91
+60-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:40:22-88
+61    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+61-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:41:5-92
+61-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:41:22-89
+62    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+62-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:42:5-93
+62-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:42:22-90
+63    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+63-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:43:5-73
+63-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:43:22-70
+64    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+64-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:44:5-82
+64-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:44:22-79
+65    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+65-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:45:5-83
+65-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:45:22-80
+66    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+66-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:46:5-88
+66-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:46:22-85
+67    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+67-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:47:5-89
+67-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:47:22-86
+68
+69    <uses-feature
+69-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\415b12c0696f8db2fc2aa2d7a230bc75\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+70        android:glEsVersion="0x00020000"
+70-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\415b12c0696f8db2fc2aa2d7a230bc75\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+71        android:required="true" />
+71-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\415b12c0696f8db2fc2aa2d7a230bc75\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+72
+73    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+73-->[am.appwise.components:NoInternetDialog:1.1.3] C:\Users\affity\.gradle\caches\transforms-3\4ff59b19b328cc255ad843b2c91b0644\transformed\jetified-NoInternetDialog-1.1.3\AndroidManifest.xml:14:5-76
+73-->[am.appwise.components:NoInternetDialog:1.1.3] C:\Users\affity\.gradle\caches\transforms-3\4ff59b19b328cc255ad843b2c91b0644\transformed\jetified-NoInternetDialog-1.1.3\AndroidManifest.xml:14:22-73
+74    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+74-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+74-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+75
+76    <uses-feature
+76-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:12:5-14:36
+77        android:name="android.hardware.camera"
+77-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:13:9-47
+78        android:required="false" />
+78-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:14:9-33
+79    <uses-feature
+79-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:15:5-17:36
+80        android:name="android.hardware.camera.autofocus"
+80-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:16:9-57
+81        android:required="false" />
+81-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
+82
+83    <application
+83-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:27:5-178:19
+84        android:name="com.misfer.srisabaries.app.App"
+84-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:28:9-54
+85        android:allowBackup="false"
+85-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:29:9-36
+86        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+86-->[androidx.core:core:1.2.0] C:\Users\affity\.gradle\caches\transforms-3\ec3ae30f027a1b5a25f7bf6db815b8e6\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
+87        android:debuggable="true"
+88        android:fullBackupContent="false"
+88-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:30:9-42
+89        android:hardwareAccelerated="true"
+89-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:35:9-43
+90        android:icon="@mipmap/ic_launcher_foreground"
+90-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:31:9-54
+91        android:label="@string/app_name"
+91-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:32:9-41
+92        android:supportsRtl="true"
+92-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:33:9-35
+93        android:testOnly="true"
+94        android:theme="@style/AppTheme"
+94-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:34:9-40
+95        android:usesCleartextTraffic="true"
+95-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:36:9-44
+96        android:windowSoftInputMode="adjustPan" >
+96-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:30:9-48
+97        <meta-data
+97-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:41:9-43:55
+98            android:name="com.facebook.sdk.ApplicationId"
+98-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:42:13-58
+99            android:value="@string/facebook_app_id" />
+99-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:43:13-52
+100        <!--
+101            <meta-data
+102            android:name="com.google.android.maps.v2.API_KEY"
+103            android:value="@string/google_api_app_id" />
+104        -->
+105
+106
+107        <!-- Editted by saud. above meta data tag does not works with place picker api. -->
+108        <meta-data
+108-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:49:9-51:56
+109            android:name="com.google.android.geo.API_KEY"
+109-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:50:13-58
+110            android:value="@string/google_api_app_id" />
+110-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:51:13-54
+111        <!-- Editted by saud -->
+112
+113        <meta-data
+113-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:54:9-56:52
+114            android:name="com.google.firebase.messaging.default_notification_icon"
+114-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:55:13-83
+115            android:resource="@drawable/ic_logo" />
+115-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:56:13-49
+116        <!--
+117            <meta-data
+118            android:name="com.google.android.gms.ads.APPLICATION_ID"
+119            android:value="@string/addmob_AppID" />
+120        -->
+121        <meta-data
+121-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:60:9-62:58
+122            android:name="instamojo.orderauth.url"
+122-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:61:13-51
+123            android:value="@string/instamojo_file_url" />
+123-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:62:13-55
+124
+125        <!-- Razor Pay API_KEY -->
+126        <meta-data
+126-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:65:8-68:15
+127            android:name="com.razorpay.ApiKey"
+127-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:66:13-47
+128            android:value="@string/razor_api_key" />
+128-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:67:13-50
+129
+130        <provider
+131            android:name="androidx.core.content.FileProvider"
+131-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:72:13-62
+132            android:authorities="com.misfer.srisabaries.provider"
+132-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:73:13-60
+133            android:exported="false"
+133-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:74:13-37
+134            android:grantUriPermissions="true" >
+134-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:75:13-47
+135            <meta-data
+135-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:76:13-78:58
+136                android:name="android.support.FILE_PROVIDER_PATHS"
+136-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:77:17-67
+137                android:resource="@xml/provider_paths" />
+137-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:78:17-55
+138        </provider>
+139
+140        <activity
+140-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:82:9-94:20
+141            android:name="com.misfer.srisabaries.activities.SplashScreen"
+141-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:83:13-74
+142            android:exported="true"
+142-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:84:13-36
+143            android:launchMode="singleTask"
+143-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:85:13-44
+144            android:screenOrientation="portrait"
+144-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:86:13-49
+145            android:theme="@style/MySplashScreen" >
+145-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:88:13-50
+146            <intent-filter>
+146-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:90:13-93:29
+147                <action android:name="android.intent.action.MAIN" />
+147-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:17-69
+147-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:25-66
+148
+149                <category android:name="android.intent.category.LAUNCHER" />
+149-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:92:17-77
+149-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:92:27-74
+150            </intent-filter>
+151        </activity>
+152        <activity android:name="com.misfer.srisabaries.activities.IntroScreen" />
+152-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:96:9-82
+152-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:96:19-79
+153        <activity
+153-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:98:9-112:20
+154            android:name="com.misfer.srisabaries.activities.MainActivity"
+154-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:99:13-74
+155            android:exported="true"
+155-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:100:13-36
+156            android:launchMode="singleTask"
+156-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:101:13-44
+157            android:screenOrientation="portrait"
+157-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:102:13-49
+158            android:windowSoftInputMode="adjustResize" >
+158-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:104:13-55
+159            <intent-filter>
+159-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:106:13-111:29
+160                <action android:name="android.intent.action.MAIN" />
+160-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:17-69
+160-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:25-66
+161                <action android:name="android.intent.action.SEARCH" />
+161-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:17-71
+161-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:25-68
+162
+163                <category android:name="android.intent.category.DEFAULT" />
+163-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+163-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+164            </intent-filter>
+165        </activity>
+166        <activity
+166-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:114:9-119:58
+167            android:name="com.misfer.srisabaries.activities.Login"
+167-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:115:13-67
+168            android:label=".activities.Login"
+168-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:116:13-46
+169            android:screenOrientation="portrait"
+169-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:117:13-49
+170            android:windowSoftInputMode="adjustResize" />
+170-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:119:13-55
+171        <activity
+171-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:121:9-126:56
+172            android:name="com.misfer.srisabaries.activities.Signup"
+172-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:122:13-68
+173            android:label=".activities.Signup"
+173-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:123:13-47
+174            android:screenOrientation="portrait"
+174-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:124:13-49
+175            android:windowSoftInputMode="adjustResize" />
+175-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:125:13-55
+176        <activity android:name="com.misfer.srisabaries.Maps.MapActivity" />
+176-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:129:9-75
+176-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:129:19-73
+177        <activity android:name="com.misfer.srisabaries.activities.Order_Tracking_Activity" />
+177-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:131:9-94
+177-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:131:19-91
+178
+179        <!-- Facebook Activity -->
+180
+181        <activity
+181-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:135:9-138:48
+182            android:name="com.facebook.FacebookActivity"
+182-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:136:13-57
+183            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+183-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:137:13-96
+184            android:label="@string/app_name"
+184-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:138:13-45
+185            android:theme="@style/com_facebook_activity_theme" />
+185-->[com.facebook.android:facebook-common:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e82487fa0c4897eecac981f50da210b9\transformed\jetified-facebook-common-4.42.0\AndroidManifest.xml:32:13-63
+186
+187        <!-- Braintree Activity -->
+188
+189        <activity
+189-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:142:9-152:20
+190            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+190-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:143:13-84
+191            android:launchMode="singleTask" >
+191-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:144:13-44
+192            <intent-filter>
+192-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:145:13-151:29
+193                <action android:name="android.intent.action.VIEW" />
+193-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:17-69
+193-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:25-66
+194
+195                <data android:scheme="com.misfer.srisabaries.braintree" />
+195-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+196
+197                <category android:name="android.intent.category.DEFAULT" />
+197-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+197-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+198                <category android:name="android.intent.category.BROWSABLE" />
+198-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:17-78
+198-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:27-75
+199            </intent-filter>
+200        </activity>
+201
+202        <!-- Scheduled Notifications -->
+203
+204        <receiver
+204-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:157:9-166:20
+205            android:name="com.misfer.srisabaries.receivers.AlarmReceiver"
+205-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:158:13-74
+206            android:enabled="false" >
+206-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:159:13-36
+207            <intent-filter>
+207-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:160:13-165:29
+208                <category android:name="android.intent.category.APP_MARKET" />
+208-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:161:17-79
+208-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:161:27-76
+209
+210                <action android:name="android.intent.action.BOOT_COMPLETED" />
+210-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:17-79
+210-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:25-76
+211                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+211-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:164:17-84
+211-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:164:25-81
+212            </intent-filter>
+213        </receiver>
+214
+215        <!-- Firebase Notifications -->
+216
+217        <service android:name="com.misfer.srisabaries.services.MyFirebaseInstanceIDService" >
+217-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:171:9-175:19
+217-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:171:18-92
+218            <intent-filter>
+218-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:172:13-174:29
+219                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+219-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:173:17-80
+219-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:173:25-77
+220            </intent-filter>
+221        </service>
+222
+223        <activity
+223-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:18:9-20:62
+224            android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
+224-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:19:13-94
+225            android:theme="@style/bt_three_d_secure_theme" />
+225-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:20:13-59
+226        <activity
+226-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:21:9-23:64
+227            android:name="com.braintreepayments.api.dropin.DropInActivity"
+227-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:22:13-75
+228            android:theme="@style/bt_drop_in_activity_theme" />
+228-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:23:13-61
+229        <activity
+229-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:24:9-26:65
+230            android:name="com.braintreepayments.api.dropin.AddCardActivity"
+230-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:25:13-76
+231            android:theme="@style/bt_add_card_activity_theme" />
+231-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:26:13-62
+232        <activity
+232-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:27:9-29:70
+233            android:name="com.braintreepayments.api.dropin.VaultManagerActivity"
+233-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:28:13-81
+234            android:theme="@style/bt_vault_manager_activity_theme" />
+234-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\affity\.gradle\caches\transforms-3\0fffe4d8f55f4da3e4666be016b47183\transformed\jetified-drop-in-3.7.1\AndroidManifest.xml:29:13-67
+235        <activity
+235-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:19:9-24:55
+236            android:name="com.payumoney.sdkui.ui.activities.PayUmoneyActivity"
+236-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:20:13-79
+237            android:label="@string/title_activity_citrus"
+237-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:21:13-58
+238            android:screenOrientation="portrait"
+238-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:22:13-49
+239            android:theme="@style/PayumoneyAppTheme"
+239-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:23:13-53
+240            android:windowSoftInputMode="adjustPan" />
+240-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:24:13-52
+241        <activity
+241-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:25:9-28:56
+242            android:name="com.payumoney.sdkui.ui.activities.ReviewOrderActivity"
+242-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:26:13-81
+243            android:screenOrientation="portrait"
+243-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:27:13-49
+244            android:theme="@style/PayumoneyAppTheme" />
+244-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\affity\.gradle\caches\transforms-3\f888e3e5661d1f657f9d2dc47f765aca\transformed\jetified-plug-n-play-1.6.0\AndroidManifest.xml:28:13-53
+245        <activity
+245-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:31:9-34:72
+246            android:name="com.payumoney.core.SdkWebViewActivityNew"
+246-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:32:13-68
+247            android:screenOrientation="portrait"
+247-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:33:13-49
+248            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+248-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:34:13-69
+249        <activity
+249-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:35:9-40:59
+250            android:name="com.payu.custombrowser.CBActivity"
+250-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:36:13-61
+251            android:screenOrientation="portrait"
+251-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:37:13-49
+252            android:theme="@style/Theme.AppCompat"
+252-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:38:13-51
+253            android:windowSoftInputMode="stateAlwaysHidden" />
+253-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\affity\.gradle\caches\transforms-3\6a88ec107998568f1aa438e6a499e267\transformed\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:39:13-60
+254        <activity android:name="instamojo.library.Instamojo" >
+254-->[ai.devsupport.instamojo:instamojolib:0.1.6] C:\Users\affity\.gradle\caches\transforms-3\144105d800f999fed315cd5b97ed7839\transformed\jetified-instamojolib-0.1.6\AndroidManifest.xml:14:9-15:20
+254-->[ai.devsupport.instamojo:instamojolib:0.1.6] C:\Users\affity\.gradle\caches\transforms-3\144105d800f999fed315cd5b97ed7839\transformed\jetified-instamojolib-0.1.6\AndroidManifest.xml:14:19-61
+255        </activity> <!-- Autocomplete -->
+256        <activity
+256-->[com.google.android.libraries.places:places:1.1.0] C:\Users\affity\.gradle\caches\transforms-3\0ef41341db12a2a24b9e8bd2f8b33285\transformed\jetified-places-1.1.0\AndroidManifest.xml:16:9-23:20
+257            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+257-->[com.google.android.libraries.places:places:1.1.0] C:\Users\affity\.gradle\caches\transforms-3\0ef41341db12a2a24b9e8bd2f8b33285\transformed\jetified-places-1.1.0\AndroidManifest.xml:17:13-91
+258            android:exported="false"
+258-->[com.google.android.libraries.places:places:1.1.0] C:\Users\affity\.gradle\caches\transforms-3\0ef41341db12a2a24b9e8bd2f8b33285\transformed\jetified-places-1.1.0\AndroidManifest.xml:18:13-37
+259            android:hardwareAccelerated="true"
+259-->[com.google.android.libraries.places:places:1.1.0] C:\Users\affity\.gradle\caches\transforms-3\0ef41341db12a2a24b9e8bd2f8b33285\transformed\jetified-places-1.1.0\AndroidManifest.xml:19:13-47
+260            android:label="@string/places_autocomplete_label"
+260-->[com.google.android.libraries.places:places:1.1.0] C:\Users\affity\.gradle\caches\transforms-3\0ef41341db12a2a24b9e8bd2f8b33285\transformed\jetified-places-1.1.0\AndroidManifest.xml:20:13-62
+261            android:theme="@style/PlacesAutocompleteThemeOverlay"
+261-->[com.google.android.libraries.places:places:1.1.0] C:\Users\affity\.gradle\caches\transforms-3\0ef41341db12a2a24b9e8bd2f8b33285\transformed\jetified-places-1.1.0\AndroidManifest.xml:21:13-66
+262            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+262-->[com.google.android.libraries.places:places:1.1.0] C:\Users\affity\.gradle\caches\transforms-3\0ef41341db12a2a24b9e8bd2f8b33285\transformed\jetified-places-1.1.0\AndroidManifest.xml:22:13-71
+263        </activity>
+264        <activity
+264-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:15:9-26:20
+265            android:name="com.instamojo.android.activities.PaymentDetailsActivity"
+265-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:16:13-83
+266            android:screenOrientation="portrait"
+266-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:17:13-49
+267            android:theme="@style/SdkTheme" >
+267-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:18:13-44
+268            <meta-data
+268-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:19:13-21:54
+269                android:name="android.app.searchable"
+269-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:20:17-54
+270                android:resource="@xml/searchable" />
+270-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:21:17-51
+271
+272            <intent-filter>
+272-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:23:13-25:29
+273                <action android:name="android.intent.action.SEARCH" />
+273-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:17-71
+273-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:25-68
+274            </intent-filter>
+275        </activity>
+276        <activity
+276-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:27:9-33:58
+277            android:name="com.instamojo.android.activities.PaymentActivity"
+277-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:28:13-76
+278            android:hardwareAccelerated="true"
+278-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:29:13-47
+279            android:label="Payment"
+279-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:30:13-36
+280            android:screenOrientation="portrait"
+280-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:31:13-49
+281            android:theme="@style/SdkTheme"
+281-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:32:13-44
+282            android:windowSoftInputMode="adjustResize" />
+282-->[com.instamojo:android-sdk:1.2.6] C:\Users\affity\.gradle\caches\transforms-3\8bd7336dff9b635720633cf87648d44c\transformed\jetified-android-sdk-1.2.6\AndroidManifest.xml:33:13-55
+283        <activity android:name="com.facebook.CustomTabMainActivity" />
+283-->[com.facebook.android:facebook-common:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e82487fa0c4897eecac981f50da210b9\transformed\jetified-facebook-common-4.42.0\AndroidManifest.xml:33:9-71
+283-->[com.facebook.android:facebook-common:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e82487fa0c4897eecac981f50da210b9\transformed\jetified-facebook-common-4.42.0\AndroidManifest.xml:33:19-68
+284        <activity android:name="com.facebook.CustomTabActivity" />
+284-->[com.facebook.android:facebook-common:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e82487fa0c4897eecac981f50da210b9\transformed\jetified-facebook-common-4.42.0\AndroidManifest.xml:34:9-67
+284-->[com.facebook.android:facebook-common:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e82487fa0c4897eecac981f50da210b9\transformed\jetified-facebook-common-4.42.0\AndroidManifest.xml:34:19-64
+285
+286        <service android:name="com.payu.custombrowser.services.SnoozeService" />
+286-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:23:9-81
+286-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:23:18-78
+287
+288        <activity android:name="com.payu.custombrowser.PreLollipopPaymentsActivity" >
+288-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:25:9-42:20
+288-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:25:19-84
+289            <intent-filter>
+289-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:26:13-33:29
+290                <data android:scheme="com.misfer.srisabaries.success" />
+290-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+291
+292                <action android:name="android.intent.action.VIEW" />
+292-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:17-69
+292-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:25-66
+293
+294                <category android:name="android.intent.category.DEFAULT" />
+294-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+294-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+295                <category android:name="android.intent.category.BROWSABLE" />
+295-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:17-78
+295-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:27-75
+296            </intent-filter>
+297            <intent-filter>
+297-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:34:13-41:29
+298                <data android:scheme="com.misfer.srisabaries.failure" />
+298-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+299
+300                <action android:name="android.intent.action.VIEW" />
+300-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:17-69
+300-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:25-66
+301
+302                <category android:name="android.intent.category.DEFAULT" />
+302-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+302-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+303                <category android:name="android.intent.category.BROWSABLE" />
+303-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:17-78
+303-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:27-75
+304            </intent-filter>
+305        </activity>
+306        <activity android:name="com.payu.custombrowser.PrePaymentsActivity" />
+306-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:43:9-79
+306-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\affity\.gradle\caches\transforms-3\d17c24bd12d57372c90f43f50e2c7e39\transformed\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:43:19-76
+307        <activity
+307-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\affity\.gradle\caches\transforms-3\0a73a4ccd3db179230c5140409f551b5\transformed\jetified-upisdk-1.0.2\AndroidManifest.xml:14:9-17:63
+308            android:name="com.payu.upisdk.upiintent.PaymentResponseUpiSdkActivity"
+308-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\affity\.gradle\caches\transforms-3\0a73a4ccd3db179230c5140409f551b5\transformed\jetified-upisdk-1.0.2\AndroidManifest.xml:15:13-83
+309            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"
+309-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\affity\.gradle\caches\transforms-3\0a73a4ccd3db179230c5140409f551b5\transformed\jetified-upisdk-1.0.2\AndroidManifest.xml:16:13-75
+310            android:windowSoftInputMode="stateAlwaysHidden" />
+310-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\affity\.gradle\caches\transforms-3\0a73a4ccd3db179230c5140409f551b5\transformed\jetified-upisdk-1.0.2\AndroidManifest.xml:17:13-60
+311
+312        <meta-data
+312-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:50:9-52:51
+313            android:name="onesignal_app_id"
+313-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:51:13-44
+314            android:value="YOUR_ONESIGNAL_APP_ID" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+314-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:52:13-48
+315        <meta-data
+315-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:54:9-56:70
+316            android:name="onesignal_google_project_number"
+316-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:55:13-59
+317            android:value="str:REMOTE" />
+317-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:56:13-67
+318
+319        <receiver
+319-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:58:9-68:20
+320            android:name="com.onesignal.GcmBroadcastReceiver"
+320-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:59:13-62
+321            android:permission="com.google.android.c2dm.permission.SEND" >
+321-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:60:13-73
+322
+323            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+324            <intent-filter android:priority="999" >
+324-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:63:13-67:29
+324-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:63:28-50
+325                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+325-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:17-81
+325-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:25-78
+326
+327                <category android:name="com.misfer.srisabaries" />
+327-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:66:17-61
+327-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:66:27-58
+328            </intent-filter>
+329        </receiver>
+330        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+330-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:69:9-77
+330-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:69:19-74
+331
+332        <service android:name="com.onesignal.GcmIntentService" />
+332-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:71:9-66
+332-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:71:18-63
+333        <service
+333-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:72:9-74:72
+334            android:name="com.onesignal.GcmIntentJobService"
+334-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:73:13-61
+335            android:permission="android.permission.BIND_JOB_SERVICE" />
+335-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:74:13-69
+336        <service
+336-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:75:9-77:72
+337            android:name="com.onesignal.RestoreJobService"
+337-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:76:13-59
+338            android:permission="android.permission.BIND_JOB_SERVICE" />
+338-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:77:13-69
+339        <service
+339-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:78:9-80:72
+340            android:name="com.onesignal.RestoreKickoffJobService"
+340-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:79:13-66
+341            android:permission="android.permission.BIND_JOB_SERVICE" />
+341-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:80:13-69
+342        <service
+342-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:81:9-83:43
+343            android:name="com.onesignal.SyncService"
+343-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:82:13-53
+344            android:stopWithTask="true" />
+344-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:83:13-40
+345        <service
+345-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:84:9-86:72
+346            android:name="com.onesignal.SyncJobService"
+346-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:85:13-56
+347            android:permission="android.permission.BIND_JOB_SERVICE" />
+347-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:86:13-69
+348
+349        <activity
+349-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:88:9-90:75
+350            android:name="com.onesignal.PermissionsActivity"
+350-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:89:13-61
+351            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+351-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:90:13-72
+352
+353        <service android:name="com.onesignal.NotificationRestoreService" />
+353-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:92:9-76
+353-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:92:18-73
+354
+355        <receiver android:name="com.onesignal.BootUpReceiver" >
+355-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:94:9-100:20
+355-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:94:19-62
+356            <intent-filter>
+356-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:95:13-99:29
+357                <action android:name="android.intent.action.ACTION_BOOT_COMPLETED" />
+357-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:96:17-86
+357-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:96:25-83
+358                <action android:name="android.intent.action.BOOT_COMPLETED" />
+358-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:17-79
+358-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:25-76
+359                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+359-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:98:17-82
+359-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:98:25-79
+360            </intent-filter>
+361        </receiver>
+362        <receiver android:name="com.onesignal.UpgradeReceiver" >
+362-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:101:9-105:20
+362-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:101:19-63
+363            <intent-filter>
+363-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:102:13-104:29
+364                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+364-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:103:17-84
+364-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:103:25-81
+365            </intent-filter>
+366        </receiver>
+367
+368        <activity
+368-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:13:9-16:47
+369            android:name="com.paytm.pgsdk.PaytmPGActivity"
+369-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:14:13-59
+370            android:screenOrientation="portrait"
+370-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:15:13-49
+371            android:theme="@style/AppTheme" />
+371-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:16:13-44
+372
+373        <service
+373-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:18:9-20:40
+374            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+374-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:19:13-73
+375            android:exported="false" />
+375-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:20:13-37
+376        <service
+376-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:21:9-23:40
+377            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+377-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:22:13-72
+378            android:exported="false" />
+378-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:23:13-37
+379        <service
+379-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:24:9-27:39
+380            android:name="com.paytm.pgsdk.easypay.utils.EasypayLoaderService"
+380-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:25:13-78
+381            android:enabled="true"
+381-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:26:13-35
+382            android:exported="true" />
+382-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:27:13-36
+383        <service
+383-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:28:9-31:39
+384            android:name="com.paytm.pgsdk.easypay.utils.AnalyticsService"
+384-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:29:13-74
+385            android:enabled="true"
+385-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:30:13-35
+386            android:exported="true" />
+386-->[com.paytm:pgplussdk:1.2.3] C:\Users\affity\.gradle\caches\transforms-3\26fcd4f6bde3214bfc42819043712869\transformed\jetified-pgplussdk-1.2.3\AndroidManifest.xml:31:13-36
+387
+388        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+388-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:9-84
+388-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:19-81
+389        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+389-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:9-90
+389-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:19-87
+390        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+390-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:9-91
+390-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:19-88
+391        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+391-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:9-82
+391-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:19-79
+392        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+392-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:9-96
+392-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:19-93
+393        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+393-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:9-97
+393-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:19-94
+394        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+394-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:9-94
+394-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:19-91
+395        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+395-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:9-97
+395-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:19-94
+396        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+396-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:9-98
+396-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:19-95
+397
+398        <service
+398-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:23:9-25:40
+399            android:name="com.paypal.android.sdk.payments.PayPalService"
+399-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:24:13-73
+400            android:exported="false" />
+400-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\affity\.gradle\caches\transforms-3\06332bb58152b25153e1835da30510b5\transformed\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:25:13-37
+401
+402        <activity
+402-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:15:9-17:62
+403            android:name="com.braintreepayments.api.AndroidPayActivity"
+403-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:16:13-72
+404            android:theme="@style/bt_transparent_activity" />
+404-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:17:13-59
+405        <activity
+405-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:18:9-20:62
+406            android:name="com.braintreepayments.api.GooglePaymentActivity"
+406-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:19:13-75
+407            android:theme="@style/bt_transparent_activity" />
+407-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:20:13-59
+408
+409        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
+409-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:23:9-93
+409-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\affity\.gradle\caches\transforms-3\3e981349916958ccab8d7fb8f17d8d4a\transformed\jetified-braintree-2.22.0\AndroidManifest.xml:23:18-90
+410
+411        <activity
+411-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:24:9-31:50
+412            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+412-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:25:13-85
+413            android:excludeFromRecents="true"
+413-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:26:13-46
+414            android:exported="true"
+414-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:27:13-36
+415            android:launchMode="singleTask"
+415-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:28:13-44
+416            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+416-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:29:13-102
+417            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+417-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:30:13-72
+418
+419        <service
+419-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:33:9-39:19
+420            android:name="com.google.firebase.components.ComponentDiscoveryService"
+420-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:34:13-84
+421            android:directBootAware="true"
+421-->[com.google.firebase:firebase-common:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\5daa838eec192990731a5f2ac415a437\transformed\jetified-firebase-common-19.2.0\AndroidManifest.xml:15:13-43
+422            android:exported="false" >
+422-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:35:13-37
+423            <meta-data
+423-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:36:13-38:85
+424                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+424-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:37:17-109
+425                android:value="com.google.firebase.components.ComponentRegistrar" />
+425-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\affity\.gradle\caches\transforms-3\38f70eedb2f6c22c3d642fa0147098b8\transformed\jetified-firebase-auth-18.1.0\AndroidManifest.xml:38:17-82
+426            <meta-data
+426-->[com.google.firebase:firebase-database:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\6fd46b42afa382228b7f157e3f6d24e0\transformed\jetified-firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+427                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+427-->[com.google.firebase:firebase-database:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\6fd46b42afa382228b7f157e3f6d24e0\transformed\jetified-firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+428                android:value="com.google.firebase.components.ComponentRegistrar" />
+428-->[com.google.firebase:firebase-database:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\6fd46b42afa382228b7f157e3f6d24e0\transformed\jetified-firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+429            <meta-data
+429-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\f70b42d54239e11553095c3a0c5b4fa5\transformed\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+430                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+430-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\f70b42d54239e11553095c3a0c5b4fa5\transformed\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+431                android:value="com.google.firebase.components.ComponentRegistrar" />
+431-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\f70b42d54239e11553095c3a0c5b4fa5\transformed\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+432            <meta-data
+432-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
+433                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+433-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
+434                android:value="com.google.firebase.components.ComponentRegistrar" />
+434-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
+435        </service>
+436        <!--
+437             FirebaseMessagingService performs security checks at runtime,
+438             but set to not exported to explicitly avoid allowing another app to call it.
+439        -->
+440        <service
+440-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\f9c82f3778ce916e9c5691b937178d1e\transformed\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
+441            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+441-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\f9c82f3778ce916e9c5691b937178d1e\transformed\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
+442            android:exported="false" >
+442-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\f9c82f3778ce916e9c5691b937178d1e\transformed\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
+443            <intent-filter android:priority="-500" >
+443-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\f9c82f3778ce916e9c5691b937178d1e\transformed\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:13-33:29
+443-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\f9c82f3778ce916e9c5691b937178d1e\transformed\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:28-51
+444                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+444-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\f9c82f3778ce916e9c5691b937178d1e\transformed\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:17-78
+444-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\f9c82f3778ce916e9c5691b937178d1e\transformed\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:25-75
+445            </intent-filter>
+446        </service>
+447
+448        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+448-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:12:9-16:20
+448-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:12:19-63
+449            <intent-filter>
+449-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:13:13-15:29
+450                <action android:name="rzp.device_token.share" />
+450-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:14:17-65
+450-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:14:25-62
+451            </intent-filter>
+452        </receiver>
+453
+454        <activity
+454-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:18:9-29:20
+455            android:name="com.razorpay.CheckoutActivity"
+455-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:19:13-57
+456            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+456-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:20:13-83
+457            android:theme="@style/CheckoutTheme" >
+457-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:21:13-49
+458            <intent-filter>
+458-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:22:13-28:29
+459                <action android:name="android.intent.action.MAIN" />
+459-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:17-69
+459-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:25-66
+460
+461                <data
+462                    android:host="rzp.io"
+463                    android:scheme="io.rzp" />
+463-->E:\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+464            </intent-filter>
+465        </activity>
+466
+467        <meta-data
+467-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:31:9-33:58
+468            android:name="com.razorpay.plugin.googlepay_all"
+468-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:32:13-61
+469            android:value="com.razorpay.RzpGpayMerged" />
+469-->[com.razorpay:checkout:1.6.12] C:\Users\affity\.gradle\caches\transforms-3\3761497ca679107cd3035aa70ecc801b\transformed\jetified-checkout-1.6.12\AndroidManifest.xml:33:13-55
+470
+471        <activity
+471-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+472            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+472-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+473            android:excludeFromRecents="true"
+473-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+474            android:exported="false"
+474-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+475            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+475-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+476        <!--
+477            Service handling Google Sign-In user revocation. For apps that do not integrate with
+478            Google Sign-In, this service will never be started.
+479        -->
+480        <service
+480-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+481            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+481-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+482            android:exported="true"
+482-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+483            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+483-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\922e67763b31281a45c2bec54aecac38\transformed\jetified-play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+484        <uses-library
+484-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\415b12c0696f8db2fc2aa2d7a230bc75\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+485            android:name="org.apache.http.legacy"
+485-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\415b12c0696f8db2fc2aa2d7a230bc75\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+486            android:required="false" />
+486-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\415b12c0696f8db2fc2aa2d7a230bc75\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+487
+488        <receiver
+488-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
+489            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+489-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
+490            android:exported="true"
+490-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
+491            android:permission="com.google.android.c2dm.permission.SEND" >
+491-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
+492            <intent-filter>
+492-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\affity\.gradle\caches\transforms-3\acc9a9e8716518207bc61614fd5a324e\transformed\jetified-firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
+493                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+493-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:17-81
+493-->[com.onesignal:OneSignal:3.9.1] C:\Users\affity\.gradle\caches\transforms-3\33bf565b384c779bc524b554e6c2f595\transformed\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:25-78
+494            </intent-filter>
+495        </receiver>
+496        <receiver
+496-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+497            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+497-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+498            android:enabled="true"
+498-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+499            android:exported="false" >
+499-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+500        </receiver>
+501        <receiver
+501-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+502            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+502-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+503            android:enabled="true"
+503-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+504            android:exported="true"
+504-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+505            android:permission="android.permission.INSTALL_PACKAGES" >
+505-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+506            <intent-filter>
+506-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+507                <action android:name="com.android.vending.INSTALL_REFERRER" />
+507-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+507-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+508            </intent-filter>
+509        </receiver>
+510
+511        <service
+511-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+512            android:name="com.google.android.gms.measurement.AppMeasurementService"
+512-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+513            android:enabled="true"
+513-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+514            android:exported="false" />
+514-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+515        <service
+515-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+516            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+516-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+517            android:enabled="true"
+517-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+518            android:exported="false"
+518-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+519            android:permission="android.permission.BIND_JOB_SERVICE" />
+519-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\affity\.gradle\caches\transforms-3\c3a174a1e56e7e94f5b65d97fc84d1e5\transformed\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+520
+521        <provider
+521-->[com.google.firebase:firebase-common:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\5daa838eec192990731a5f2ac415a437\transformed\jetified-firebase-common-19.2.0\AndroidManifest.xml:19:9-23:39
+522            android:name="com.google.firebase.provider.FirebaseInitProvider"
+522-->[com.google.firebase:firebase-common:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\5daa838eec192990731a5f2ac415a437\transformed\jetified-firebase-common-19.2.0\AndroidManifest.xml:20:13-77
+523            android:authorities="com.misfer.srisabaries.firebaseinitprovider"
+523-->[com.google.firebase:firebase-common:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\5daa838eec192990731a5f2ac415a437\transformed\jetified-firebase-common-19.2.0\AndroidManifest.xml:21:13-72
+524            android:exported="false"
+524-->[com.google.firebase:firebase-common:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\5daa838eec192990731a5f2ac415a437\transformed\jetified-firebase-common-19.2.0\AndroidManifest.xml:22:13-37
+525            android:initOrder="100" />
+525-->[com.google.firebase:firebase-common:19.2.0] C:\Users\affity\.gradle\caches\transforms-3\5daa838eec192990731a5f2ac415a437\transformed\jetified-firebase-common-19.2.0\AndroidManifest.xml:23:13-36
+526
+527        <activity
+527-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\affity\.gradle\caches\transforms-3\620d0e3a74171d8c1f4627def7a1d083\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+528            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+528-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\affity\.gradle\caches\transforms-3\620d0e3a74171d8c1f4627def7a1d083\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+529            android:exported="false"
+529-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\affity\.gradle\caches\transforms-3\620d0e3a74171d8c1f4627def7a1d083\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+530            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+530-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\affity\.gradle\caches\transforms-3\620d0e3a74171d8c1f4627def7a1d083\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+531
+532        <meta-data
+532-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\affity\.gradle\caches\transforms-3\07e8ba80c7f0e2eb808c35953fe6da8b\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:23:9-25:69
+533            android:name="com.google.android.gms.version"
+533-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\affity\.gradle\caches\transforms-3\07e8ba80c7f0e2eb808c35953fe6da8b\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
+534            android:value="@integer/google_play_services_version" />
+534-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\affity\.gradle\caches\transforms-3\07e8ba80c7f0e2eb808c35953fe6da8b\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
+535        <!--
+536         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+537         with the application context. This config is merged in with the host app's manifest,
+538         but there can only be one provider with the same authority activated at any given
+539         point; so if the end user has two or more different apps that use Facebook SDK, only the
+540         first one will be able to use the provider. To work around this problem, we use the
+541         following placeholder in the authority to identify each host application as if it was
+542         a completely different provider.
+543        -->
+544        <provider
+544-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:39:9-42:40
+545            android:name="com.facebook.internal.FacebookInitProvider"
+545-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:40:13-70
+546            android:authorities="com.misfer.srisabaries.FacebookInitProvider"
+546-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:41:13-72
+547            android:exported="false" />
+547-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:42:13-37
+548
+549        <receiver
+549-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:44:9-50:20
+550            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+550-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:45:13-86
+551            android:exported="false" >
+551-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:46:13-37
+552            <intent-filter>
+552-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:47:13-49:29
+553                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+553-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:48:17-95
+553-->[com.facebook.android:facebook-core:4.42.0] C:\Users\affity\.gradle\caches\transforms-3\e8387d18004e27b7ef05cafab269f693\transformed\jetified-facebook-core-4.42.0\AndroidManifest.xml:48:25-92
+554            </intent-filter>
+555        </receiver>
+556
+557        <activity
+557-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
+558            android:name="io.card.payment.CardIOActivity"
+558-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
+559            android:configChanges="keyboardHidden|orientation" />
+559-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
+560        <activity android:name="io.card.payment.DataEntryActivity" />
+560-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
+560-->[io.card:android-sdk:5.5.1] C:\Users\affity\.gradle\caches\transforms-3\f644c1811beb7ce932d28391cfca364d\transformed\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
+561    </application>
+562
+563</manifest>

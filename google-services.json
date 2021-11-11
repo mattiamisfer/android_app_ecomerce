@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "973985956638",
+    "project_id": "newsri-4589b",
+    "storage_bucket": "newsri-4589b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973985956638:android:5e711bc3403b8e6f8cff0f",
+        "android_client_info": {
+          "package_name": "com.misfer.srisabaries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973985956638-upgfpvq30i4aj56mqi9uvpedv0up9lo6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.misfer.srisabaries",
+            "certificate_hash": "7dbcc81da5d03326bf8496a649c455057bf7514c"
+          }
+        },
+        {
+          "client_id": "973985956638-lf26gtha04pem2ildd39tpbi85f338uh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB8NCojbiAnn6Z66ImdNGwEOl1jXt-cJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973985956638-lf26gtha04pem2ildd39tpbi85f338uh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
